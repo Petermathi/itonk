@@ -1,0 +1,15 @@
+Microservices:
+ - User: Web, Config Client (Artifact: users) @Peter
+ - Products: Web, Config Client (Artifact: products) @Lasse
+ - Order: Web, Config Client (Artifact: orders) @Peter
+
+API Gateway
+ - Zuul, Web @Lasse
+
+Config Server
+ - Config Server @Peter
+
+UI
+ - ???
+
+Group: com.itonk5
