@@ -1,7 +1,7 @@
 Microservices:
- - User: Web, Config Client (Artifact: users) @Peter
- - Products: Web, Config Client (Artifact: products) @Lasse
- - Order: Web, Config Client (Artifact: orders) @Peter
+ - User: Web, Config Client (Artifact: users) @Peter: Port 9002?
+ - Products: Web, Config Client (Artifact: products) @Lasse: Port 9001
+ - Order: Web, Config Client (Artifact: orders) @Peter: Port 9003
 
 API Gateway
  - Zuul, Web @Lasse
@@ -10,6 +10,6 @@ Config Server
  - Config Server @Peter
 
 UI
- - ???
+ - Angular.js.. Se deres demo projekt.
 
 Group: com.itonk5
