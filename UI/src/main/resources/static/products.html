@@ -1,0 +1,10 @@
+<div ng-repeat="product in nav.productlist track by $index" class="panel panel-default">
+    <div class="panel-body">
+        <img ng-src="{{item.image_url}}" />
+    </div>
+    <div class="panel-footer">
+        <strong>Name: </strong>{{product.name}} <br/>
+        <strong>Price:</strong> {{product.price}} <br/>
+        //more here...
+    </div>
+</div>

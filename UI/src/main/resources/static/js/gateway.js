@@ -1,4 +1,4 @@
-angular.module('gateway', []).controller('navigation',
+angular.module('UI', []).controller('navigation',
     function($http) {
         var self = this;
 
@@ -8,23 +8,14 @@ angular.module('gateway', []).controller('navigation',
             self.template = "home.html";
         }
 
-        self.cats = function(){
-            self.template = "cats.html";
-            $http.get('cats', {
+        self.products = function(){
+            self.template = "products.html";
+            $http.get('products', {
             }).success(function(data) {
-                self.catlist = data;
+                self.productlist = data;
             }).error(function() {
                 alert("Error");
             });
         };
 
-        self.dogs = function(){
-            self.template = "dogs.html";
-            $http.get('dogs', {
-            }).success(function(data) {
-                self.doglist = data;
-            }).error(function() {
-                alert("Error");
-            });
-        };
     });
