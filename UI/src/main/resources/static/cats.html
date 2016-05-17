@@ -1,0 +1,10 @@
+<div ng-repeat="item in nav.catlist track by $index" class="panel panel-default">
+    <div class="panel-body">
+        <img ng-src="{{item.image_url}}" />
+    </div>
+    <div class="panel-footer">
+        <strong>Name: </strong>{{item.name}} <br/>
+        <strong>Nickname:</strong> {{item.nickname}} <br/>
+        <strong>Age: </strong> {{item.age}} <br/>
+    </div>
+</div>
