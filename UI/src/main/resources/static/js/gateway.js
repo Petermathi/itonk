@@ -18,4 +18,14 @@ angular.module('UI', []).controller('navigation',
             });
         };
 
+        self.users = function(){
+            self.template = "users.html";
+            $http.get('users', {
+            }).success(function(data) {
+                self.userlist = data;
+            }).error(function() {
+                alert("Error");
+            });
+        };
+
     });
