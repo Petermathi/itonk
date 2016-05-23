@@ -28,6 +28,16 @@ angular.module('UI', []).controller('navigation',
             });
         };
 
+        self.orders = function(){
+            self.template = "orders.html";
+            $http.get('orders', {
+            }).success(function(data) {
+                self.userlist = data;
+            }).error(function() {
+                alert("Error");
+            });
+        };
+
     });
 
 
