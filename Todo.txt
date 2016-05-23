@@ -1,5 +1,5 @@
 Microservices:
- - User: Web, Config Client (Artifact: users) @Peter: Port 9002?
+ - User: Web, Config Client (Artifact: users) @Peter: Port 9002
  - Products: Web, Config Client (Artifact: products) @Lasse: Port 9001
  - Order: Web, Config Client (Artifact: orders) @Peter: Port 9003
 
