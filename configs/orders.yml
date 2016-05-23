@@ -1,4 +1,4 @@
 configuration:
   projectName: users
 server:
-  port: 9006
+  port: 9003
