@@ -3,18 +3,19 @@ package com.itonk5;
 /**
  * Created by lassehavenielsen on 10/05/2016.
  */
-public class Product {
+public class Item
+{
     private Long id;
     private String name;
     private Double price;
     private String description;
     private String imageUrl;
 
-    public Product() {
+    public Item() {
 
     }
 
-    public Product(Long id, String name, Double price, String description) {
+    public Item(Long id, String name, Double price, String description) {
         this.id = id;
         this.name = name;
         this.price = price;
