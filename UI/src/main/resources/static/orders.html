@@ -5,3 +5,17 @@
         <input type="submit">
     </form>
 </div>
+
+
+<div ng-repeat="orders in nav.orderlist track by $index" class="panel panel-default">
+
+    <div class="panel-footer">
+        <strong>Name: </strong>{{order.firstName}} <br/>
+        <div ng-repeat="item in order.products track by $index" class="panel panel-default">
+            <div class="panel-footer">
+                <strong>Product: </strong>{{product.title}} <br/>
+                //more here...
+            </div>
+        </div>
+    </div>
+</div>
