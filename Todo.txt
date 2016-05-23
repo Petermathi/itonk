@@ -10,6 +10,8 @@ Config Server
  - Config Server @Peter
 
 UI
- - Angular.js.. Se deres demo projekt.
+ - Login og vise bruger data.
+ - Orders skal vise alle ordrer og kunne sortere når der trykkes submit.
+
 
 Group: com.itonk5
