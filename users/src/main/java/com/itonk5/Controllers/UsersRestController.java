@@ -14,6 +14,8 @@ public class UsersRestController {
 
   private Map<String, User> users = new HashMap<>();
 
+
+
   @RequestMapping(method = RequestMethod.GET, path = "/initMap")
   public ResponseEntity<?> initMap(){
     users.put("Pie1", new User("Peter","Mathiasen","Pie1", "PieCluster"));
@@ -23,6 +25,8 @@ public class UsersRestController {
 
   @RequestMapping(method = RequestMethod.GET)
   public ResponseEntity<Collection<User> > getAllUsers(){
+    users.put("Pie1", new User("Peter","Mathiasen","Pie1", "PieCluster"));
+    users.put("test", new User("test","test","test", "test"));
     return new ResponseEntity<>( users.values(), HttpStatus.OK);
   }
 
