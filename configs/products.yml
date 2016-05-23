@@ -1,0 +1,4 @@
+configuration:
+  projectName: products
+server:
+  port: 9004

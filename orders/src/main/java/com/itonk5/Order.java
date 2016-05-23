@@ -1,14 +1,14 @@
 package com.itonk5;
 
 import java.util.*;
-import com.itonk5.Product;
+import com.itonk5.Item;
 
 public class Order {
 
   private String firstName;
   private String lastName;
   private String userName;
-  private List<Product> products;
+  private List<Item> products;
 
   public Order(String fname, String lname, String userName, List products) {
     this.firstName = fname;
@@ -22,5 +22,5 @@ public class Order {
   public String getFirstName() {return firstName;}
   public String getLastName() {return lastName;}
   public String getUserName() {return userName;}
-  public List<Product> getProducts() {return products;}
+  public List<Item> getProducts() {return products;}
 }

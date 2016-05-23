@@ -1,0 +1,4 @@
+configuration:
+  projectName: UI
+server:
+  port: 8080
