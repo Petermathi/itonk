@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+/Users/petermathiasen/itonk/itonk/products/src/main/java/com/itonk5/Models/Product.java
+/Users/petermathiasen/itonk/itonk/products/src/main/java/com/itonk5/Controllers/ProductRestController.java
+/Users/petermathiasen/itonk/itonk/products/src/main/java/com/itonk5/ProductsApplication.java
+/Users/petermathiasen/itonk/itonk/products/src/main/java/com/itonk5/Models/Category.java
+=======
 /Users/lassehavenielsen/Documents/GIT/ITONK_FAELLES/products/src/main/java/com/itonk5/Controllers/ProductRestController.java
 /Users/lassehavenielsen/Documents/GIT/ITONK_FAELLES/products/src/main/java/com/itonk5/Models/Category.java
 /Users/lassehavenielsen/Documents/GIT/ITONK_FAELLES/products/src/main/java/com/itonk5/Models/Product.java
 /Users/lassehavenielsen/Documents/GIT/ITONK_FAELLES/products/src/main/java/com/itonk5/ProductsApplication.java
+>>>>>>> f76a3ea99f68394034b78d328939024915461f43
