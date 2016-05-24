@@ -4,7 +4,11 @@ import com.itonk5.Item;
 import com.itonk5.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.util.*;
 
 @RestController
@@ -15,6 +19,7 @@ public class OrdersRestController {
 
 
   private List<Order> orders = new ArrayList<Order>();
+  private List<Order> result = new ArrayList<Order>();
 
 
   @RequestMapping(method = RequestMethod.GET)
@@ -53,40 +58,52 @@ public class OrdersRestController {
   @RequestMapping(method = RequestMethod.GET, value = "/{username}")
   public ResponseEntity<List<Order>> getOrdersWithUsername(@PathVariable String username) {
 
-    double totalPrice = 0;
+    if(orders.isEmpty()){
 
-    List<Item> products = new ArrayList();
-    List<Order> pieOrders = new ArrayList();
-    products.add(
-      new Item((long) 1,
-                  "Topman Black Pants",
-                  22.95,
-                  "Top quality pants, made for you. The black color is an elegant choice"
-                  )
-    );
-    products.add(
-      new Item((long) 2,
-                  "Topman Navy Pants",
-                  22.95,
-                  "Top quality pants, made for you. The navy color is an elegant choice"
-                  )
-    );
+      double totalPrice = 0;
+      List<Item> products = new ArrayList();
+      products.add(
+              new Item((long) 1,
+                      "Topman Black Pants",
+                      22.95,
+                      "Top quality pants, made for you. The black color is an elegant choice"
+              )
+      );
+      products.add(
+              new Item((long) 2,
+                      "Topman Navy Pants",
+                      22.95,
+                      "Top quality pants, made for you. The navy color is an elegant choice"
+              )
+      );
 
-    for(int i=1; i<products.size(); i++){
-      totalPrice += products.get(i).getPrice();
+      for(int i=1; i<products.size(); i++){
+        totalPrice = totalPrice + products.get(i).getPrice();
+      }
+
+      orders.add(new Order("Peter", "Mathiasen", "Pie1", products, totalPrice));
+      orders.add(new Order("Test", "McTest", "TestUser", products, totalPrice));
     }
 
-    pieOrders.add(new Order("Peter",
-                            "Mathiasen",
-                            "Pie1",
-                            products,
-                            totalPrice
-                            )
-    );
-    orders2.put("Peter", pieOrders);
-    orders2.put("test", pieOrders);
-    orders2.put("test2", pieOrders);
-    return new ResponseEntity<>(orders2.get(username),HttpStatus.OK);
+    result.clear();
+
+    for (Order orderToReturn : orders) {
+
+
+      if (Objects.equals(orderToReturn.getUserName(), username)) {
+
+        result.add(orderToReturn) ;
+      }
+    }
+
+    if (result.size() == 0) {
+
+      return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+    }
+
+
+    return new ResponseEntity<>(result, HttpStatus.OK);
+
   }
 
   /* @RequestMapping(method = RequestMethod.POST)
