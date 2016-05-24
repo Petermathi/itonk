@@ -1,21 +1,18 @@
-
-<div>
-    <form enctype='application/json' action="/orders/">
-        <input type="text" name="userName"><br>
-        <input type="submit">
-    </form>
-</div>
-
-
-<div ng-repeat="orders in nav.orderlist track by $index" class="panel panel-default">
+<div ng-repeat="order in nav.orderlist track by $index" class="panel panel-default">
 
     <div class="panel-footer">
-        <strong>Name: </strong>{{order.firstName}} <br/>
+        <strong>Username: </strong>{{order.userName}} <br/>
+        <strong>Total Items: </strong>{{order.products.length}} <br/>
+
         <div ng-repeat="item in order.products track by $index" class="panel panel-default">
             <div class="panel-footer">
-                <strong>Product: </strong>{{product.title}} <br/>
-                //more here...
+                <strong>Product: </strong>{{item.name}} <br/>
+                <strong>Price:</strong> {{item.price}} <br/>
+                <strong>Description:</strong> {{item.description}} <br/>
             </div>
         </div>
+
+        <strong>Total Price: </strong>{{order.totalPrice}} <br/>
+
     </div>
 </div>

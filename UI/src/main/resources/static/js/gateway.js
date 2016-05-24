@@ -32,7 +32,7 @@ angular.module('UI', []).controller('navigation',
             self.template = "orders.html";
             $http.get('orders', {
             }).success(function(data) {
-                self.userlist = data;
+                self.orderlist = data;
             }).error(function() {
                 alert("Error");
             });

@@ -1,7 +1,6 @@
 package com.itonk5;
 
-import java.util.*;
-import com.itonk5.Item;
+import java.util.List;
 
 public class Order {
 
@@ -9,12 +8,16 @@ public class Order {
   private String lastName;
   private String userName;
   private List<Item> products;
+  private Double totalPrice;
 
-  public Order(String fname, String lname, String userName, List products) {
+  public Order(String fname, String lname, String userName, List<Item> products, Double tPrice) {
     this.firstName = fname;
     this.lastName = lname;
     this.userName = userName;
     this.products = products;
+    this.totalPrice = tPrice;
+
+
 
   }
 
