@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4f63e4e-dbc2-49ec-a409-de4812153758" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UI/src/main/resources/static/users.html" afterPath="$PROJECT_DIR$/../UI/src/main/resources/static/users.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../orders/pom.xml" afterPath="$PROJECT_DIR$/../orders/pom.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ConfigServer/target/test-classes/com/au/onk/ConfigServerApplicationTests.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ConfigServer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/../ConfigServer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ConfigServer/src/test/java/com/au/onk/ConfigServerApplicationTests.java" afterPath="$PROJECT_DIR$/../ConfigServer/src/test/java/com/au/onk/ConfigServerApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UI/Dockerfile" afterPath="$PROJECT_DIR$/../UI/Dockerfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
     </list>
     <ignored path="users.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +35,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +47,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,7 +69,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#312#313#0" expanded="false" />
+                <element signature="e#337#338#0" expanded="false" />
+                <element signature="e#370#371#0" expanded="false" />
+                <element signature="e#395#396#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -380,12 +390,12 @@
       <workItem from="1463645383236" duration="1913000" />
       <workItem from="1464246375767" duration="12000" />
       <workItem from="1464246446558" duration="98000" />
-      <workItem from="1464246575284" duration="48000" />
+      <workItem from="1464246575284" duration="171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2071000" />
+    <option name="totallyTimeSpent" value="2194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="1" />
@@ -431,7 +441,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -439,7 +451,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -455,7 +469,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#395#396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -463,7 +482,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -471,7 +492,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -487,7 +510,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#395#396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -496,7 +524,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -504,7 +534,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -520,7 +552,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#395#396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -529,7 +566,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -537,7 +576,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#395#396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -545,7 +589,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
