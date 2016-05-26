@@ -1,8 +1,5 @@
-# Using rpi image with java 8
-FROM hypriot/rpi-java
-
-# Build number hard-coded so far
-COPY target/deployable-application.jar /data/
-
-EXPOSE 80
-CMD ["java", "-jar", "deployable-application.jar"]
+FROM java:8
+COPY /target/UI-0.0.1-SNAPSHOT.jar /data/
+EXPOSE 8080
+WORKDIR /data/
+CMD ["java", "-jar", "UI-0.0.1-SNAPSHOT.jar"]
