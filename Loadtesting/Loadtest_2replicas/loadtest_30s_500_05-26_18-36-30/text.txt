@@ -1,0 +1,9 @@
+Requests      [total, rate]            15000, 500.03
+Duration      [total, attack, wait]    30.64701215s, 29.997999919s, 649.012231ms
+Latencies     [mean, 50, 95, 99, max]  497.707705ms, 437.448217ms, 1.538882511s, 2.137313652s, 4.575996316s
+Bytes In      [total, mean]            17796388, 1186.43
+Bytes Out     [total, mean]            0, 0.00
+Success       [ratio]                  67.87%
+Status Codes  [code:count]             200:10181  0:4819  
+Error Set:
+Get http://192.168.1.51:8081/products: dial tcp 0.0.0.0:0->192.168.1.51:8081: socket: too many open files

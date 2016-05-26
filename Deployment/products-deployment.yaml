@@ -6,7 +6,7 @@ metadata:
     visualize: "true"
   name: products
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       labels:
