@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: products
+    visualize: "true"
+  name: products
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: products
+        tier: backend
+        track: stable
+        run: products
+        visualize: "true"
+    spec:
+      containers:
+      - image: /products:v1
+        name: products

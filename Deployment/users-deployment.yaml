@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: users
+    visualize: "true"
+  name: users
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: users
+        tier: backend
+        track: stable
+        run: users
+        visualize: "true"
+    spec:
+      containers:
+      - image: /users:v1
+        name: users

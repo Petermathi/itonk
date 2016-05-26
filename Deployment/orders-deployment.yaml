@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: orders
+    visualize: "true"
+  name: orders
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: orders
+        tier: backend
+        track: stable
+        run: orders
+        visualize: "true"
+    spec:
+      containers:
+      - image: /orders:v1
+        name: orders

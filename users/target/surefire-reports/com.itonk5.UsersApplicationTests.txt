@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.itonk5.UsersApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.864 sec - in com.itonk5.UsersApplicationTests

@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: UI
+    visualize: "true"
+  name: UI
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: UI
+        tier: frontend
+        track: stable
+        run: UI
+        visualize: "true"
+    spec:
+      containers:
+      - image: /UI:v1
+        name: UI
