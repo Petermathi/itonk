@@ -17,5 +17,5 @@ spec:
         visualize: "true"
     spec:
       containers:
-      - image: /products:v1
+      - image: /products:latest
         name: products
