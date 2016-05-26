@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
@@ -17,5 +17,5 @@ spec:
         visualize: "true"
     spec:
       containers:
-      - image: lassehavenielsen/users:latest
+      - image: lassehavenielsen/users-rpi:latest
         name: users

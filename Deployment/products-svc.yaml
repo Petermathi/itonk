@@ -8,10 +8,11 @@ metadata:
     visualize: "true"
   name: products
 spec:
+  clusterIP: 10.0.0.211
   ports:
   - port: 9001
     protocol: TCP
     targetPort: 9001
   selector:
-    app: users
-    tier: products
+    app: products
+    tier: backend

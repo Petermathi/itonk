@@ -2,3 +2,14 @@ configuration:
   projectName: UI
 server:
   port: 8080
+zuul:
+  routes:
+    products:
+      path: /products
+      url: http://10.0.0.211:9001
+    users:
+      path: /users
+      url: http://10.0.0.212:9002
+    orders:
+      path: /orders
+      url: http://10.0.0.213:9003

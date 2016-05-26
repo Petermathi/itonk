@@ -8,6 +8,7 @@ metadata:
     visualize: "true"
   name: users
 spec:
+  clusterIP: 10.0.0.212
   ports:
   - port: 9002
     protocol: TCP

@@ -8,6 +8,7 @@ metadata:
     visualize: "true"
   name: orders
 spec:
+  clusterIP: 10.0.0.213
   ports:
   - port: 9003
     protocol: TCP

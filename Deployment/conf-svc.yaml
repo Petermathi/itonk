@@ -8,6 +8,8 @@ metadata:
     visualize: "true"
   name: conf
 spec:
+  clusterIP:
+  - 10.0.0.200 
   ports:
   - port: 8888
     protocol: TCP
