@@ -2,20 +2,20 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    run: conf
+    run: config-service
     visualize: "true"
-  name: conf
+  name: config-service
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        app: conf
+        app: config-service
         tier: backend
         track: stable
-        run: conf
+        run: config-service
         visualize: "true"
     spec:
       containers:
       - image: lassehavenielsen/conf-rpi:latest
-        name: conf
+        name: config-service
