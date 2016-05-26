@@ -2,20 +2,20 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    run: UI
+    run: ui
     visualize: "true"
-  name: UI
+  name: ui
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        app: UI
+        app: ui
         tier: frontend
         track: stable
-        run: UI
+        run: ui
         visualize: "true"
     spec:
       containers:
-      - image: /UI:v1
-        name: UI
+      - image: lassehavenielsen/ui-rpi:latest
+        name: ui
