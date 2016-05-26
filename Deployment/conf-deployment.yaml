@@ -17,5 +17,5 @@ spec:
         visualize: "true"
     spec:
       containers:
-      - image: lassehavenielsen/conf-rpi:latest
+      - image: lassehavenielsen/config-server-rpi:latest
         name: config-service
