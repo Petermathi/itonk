@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: conf
+    visualize: "true"
+  name: conf
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: conf
+        tier: backend
+        track: stable
+        run: conf
+        visualize: "true"
+    spec:
+      containers:
+      - image: lassehavenielsen/conf-rpi
+        name: conf
